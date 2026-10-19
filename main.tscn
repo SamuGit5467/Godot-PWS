@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://dvfiqnwydstcm"]
-
-[node name="NIET DE MAIN" type="Node2D" unique_id=1937537486]
-
-[node name="Control" type="Control" parent="." unique_id=1716666261]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
