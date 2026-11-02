@@ -125,7 +125,7 @@ sources/2 = SubResource("TileSetAtlasSource_kry3j")
 script = ExtResource("1_8gbba")
 
 [node name="CharacterBody2D" parent="." unique_id=1871376179 instance=ExtResource("2_8gbba")]
-position = Vector2(163, 449)
+position = Vector2(161, 543)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1685459948]
 scale = Vector2(2, 2)
