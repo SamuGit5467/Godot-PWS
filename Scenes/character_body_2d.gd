@@ -3,10 +3,14 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
+@onready var spawnpoint = global_position
 
+func goal_reached():
+	print('yey')
+	position = spawnpoint
 func take_damage(damage):
 	print('ow')
-	print(damage)
+	position = spawnpoint
 	pass
 
 func _physics_process(delta: float) -> void:
