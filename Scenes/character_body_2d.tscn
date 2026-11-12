@@ -4,12 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://da6f3rxim0xsx" path="res://Sprites/BlueBall.png" id="2_it8n0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7gg18"]
-size = Vector2(64, 64)
+size = Vector2(60, 63)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1871376179]
 script = ExtResource("1_88kja")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=594485602]
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_7gg18")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=988153909]
