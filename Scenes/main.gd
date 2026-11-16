@@ -2,6 +2,7 @@ extends Node2D
 @onready var tilemap_layer: TileMapLayer = $TileMapLayer   # change this path 
 @onready var SpikeScene = preload("res://Scenes/spike.tscn")
 @onready var player: CharacterBody2D = $CharacterBody2D
+@onready var label: Label = $Label
 
 var spawn_position = Vector2(0,0)
 # Called when the node enters the scene tree for the first time.
@@ -27,4 +28,10 @@ func reset_character():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if player.losses != 0:
+		player.succesrate = player.wins/player.losses
+	else:
+		player.succesrate = 0
+
+	label.text = "Iterations: %s\nWins: %s\nLosses: %s\nSuccess rate: %s" % [player.iteration, player.wins, player.losses, player.succesrate]
 	pass

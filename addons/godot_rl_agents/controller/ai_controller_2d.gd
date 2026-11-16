@@ -2,6 +2,8 @@ extends Node2D
 class_name AIController2D
 
 @export var reset_after := 1000
+@onready var player: CharacterBody2D = $".."
+@onready var goal: Area2D = $"../../Goal"
 
 var heuristic := "human"
 var done := false
@@ -11,6 +13,8 @@ var needs_reset := false
 
 var _player: Node2D
 
+var move = Vector2(0,0)
+var jump = false
 func _ready():
 	add_to_group("AGENT")
 	
@@ -19,28 +23,32 @@ func init(player: Node2D):
 	
 #-- Methods that need implementing using the "extend script" option in Godot --#
 func get_obs() -> Dictionary:
-	assert(false, "the get_obs method is not implemented when extending from ai_controller") 
-	return {"obs":[]}
+	var obs := [
+		player.position.x,
+		player.position.y,
+		goal.position.x,
+		goal.position.y
+	]
+	return {"obs":obs}
 
 func get_reward() -> float:	
-	assert(false, "the get_reward method is not implemented when extending from ai_controller") 
-	return 0.0
+	return reward
 	
 func get_action_space() -> Dictionary:
-	assert(false, "the get get_action_space method is not implemented when extending from ai_controller") 
 	return {
-		"example_actions_continous" : {
-			"size": 2,
+		"move" : {
+			"size": 1,
 			"action_type": "continuous"
 		},
-		"example_actions_discrete" : {
-			"size": 2,
+		"jump" : {
+			"size": 1,
 			"action_type": "discrete"
 		},
 		}
 	
 func set_action(action) -> void:	
-	assert(false, "the get set_action method is not implemented when extending from ai_controller") 	
+	move.x = action['move'][0]
+	jump = action['jump']
 # -----------------------------------------------------------------------------#
 	
 func _physics_process(delta):
@@ -79,4 +87,3 @@ func set_done_false():
 func zero_reward():
 	reward = 0.0
 	
-
