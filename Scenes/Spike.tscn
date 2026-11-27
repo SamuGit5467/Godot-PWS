@@ -1,28 +1,18 @@
 [gd_scene format=3 uid="uid://bqher5emmh4o1"]
 
-[ext_resource type="Script" uid="uid://daes1g1kisfjx" path="res://Scenes/character_body_2d.gd" id="1_2mnih"]
-[ext_resource type="Texture2D" uid="uid://da6f3rxim0xsx" path="res://Sprites/BlueBall.png" id="2_fhxds"]
-[ext_resource type="Script" uid="uid://d2pjfwwjegsge" path="res://addons/godot_rl_agents/controller/ai_controller_2d.gd" id="3_khj5f"]
+[ext_resource type="Script" uid="uid://w3ksm1d5kqhn" path="res://scenes/spike.gd" id="1_7a7y0"]
+[ext_resource type="Texture2D" uid="uid://crdlqrq8n70ic" path="res://Sprites/Spike.png" id="2_1hotg"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7gg18"]
-size = Vector2(60, 63)
+[node name="Spike" type="Area2D" unique_id=408436813]
+scale = Vector2(4, 4)
+script = ExtResource("1_7a7y0")
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1871376179]
-script = ExtResource("1_2mnih")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=173496271]
+texture = ExtResource("2_1hotg")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=594485602]
-position = Vector2(0, 0.5)
-shape = SubResource("RectangleShape2D_7gg18")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1665735218]
+polygon = PackedVector2Array(-6, 8, -4, 0, 3, 0, 5, 8)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=988153909]
-texture = ExtResource("2_fhxds")
-
-[node name="AIController2D" type="Node2D" parent="." unique_id=393555913]
-script = ExtResource("3_khj5f")
-metadata/_custom_type_script = "uid://d2pjfwwjegsge"
-
-[node name="Timer" type="Timer" parent="." unique_id=539408042]
-wait_time = 0.1
-one_shot = true
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
