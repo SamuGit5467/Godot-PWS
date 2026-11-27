@@ -28,10 +28,7 @@ func reset_character():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if player.losses != 0:
-		player.succesrate = player.wins/player.losses
-	else:
-		player.succesrate = 0
+
 
 	label.text = "Iterations: %s\nWins: %s\nLosses: %s\nSuccess rate: %s" % [player.iteration, player.wins, player.losses, player.succesrate]
 	pass
