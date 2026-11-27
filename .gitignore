@@ -1,3 +1,13 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# Python virtual environment
+/rl/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE
+.vscode/

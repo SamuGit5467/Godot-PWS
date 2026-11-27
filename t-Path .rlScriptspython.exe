@@ -1,0 +1,103 @@
+ rl/Lib/site-packages/_distutils_hack/__init__.py   |  222 [31m-[m
+ .../__pycache__/__init__.cpython-311.pyc           |  Bin [31m11171[m -> [32m0[m bytes
+ .../__pycache__/override.cpython-311.pyc           |  Bin [31m328[m -> [32m0[m bytes
+ rl/Lib/site-packages/_distutils_hack/override.py   |    1 [31m-[m
+ rl/Lib/site-packages/distutils-precedence.pth      |    1 [31m-[m
+ .../site-packages/pip-24.0.dist-info/AUTHORS.txt   |  760 [31m--[m
+ rl/Lib/site-packages/pip-24.0.dist-info/INSTALLER  |    1 [31m-[m
+ .../site-packages/pip-24.0.dist-info/LICENSE.txt   |   20 [31m-[m
+ rl/Lib/site-packages/pip-24.0.dist-info/METADATA   |   88 [31m-[m
+ rl/Lib/site-packages/pip-24.0.dist-info/RECORD     | 1024 [31m---[m
+ rl/Lib/site-packages/pip-24.0.dist-info/REQUESTED  |    0
+ rl/Lib/site-packages/pip-24.0.dist-info/WHEEL      |    5 [31m-[m
+ .../pip-24.0.dist-info/entry_points.txt            |    4 [31m-[m
+ .../site-packages/pip-24.0.dist-info/top_level.txt |    1 [31m-[m
+ rl/Lib/site-packages/pip/__init__.py               |   13 [31m-[m
+ rl/Lib/site-packages/pip/__main__.py               |   24 [31m-[m
+ rl/Lib/site-packages/pip/__pip-runner__.py         |   50 [31m-[m
+ .../pip/__pycache__/__init__.cpython-311.pyc       |  Bin [31m781[m -> [32m0[m bytes
+ .../pip/__pycache__/__main__.cpython-311.pyc       |  Bin [31m900[m -> [32m0[m bytes
+ .../pip/__pycache__/__pip-runner__.cpython-311.pyc |  Bin [31m2519[m -> [32m0[m bytes
+ rl/Lib/site-packages/pip/_internal/__init__.py     |   18 [31m-[m
+ .../_internal/__pycache__/__init__.cpython-311.pyc |  Bin [31m897[m -> [32m0[m bytes
+ .../__pycache__/build_env.cpython-311.pyc          |  Bin [31m16086[m -> [32m0[m bytes
+ .../_internal/__pycache__/cache.cpython-311.pyc    |  Bin [31m14401[m -> [32m0[m bytes
+ .../__pycache__/configuration.cpython-311.pyc      |  Bin [31m19792[m -> [32m0[m bytes
+ .../__pycache__/exceptions.cpython-311.pyc         |  Bin [31m37456[m -> [32m0[m bytes
+ .../pip/_internal/__pycache__/main.cpython-311.pyc |  Bin [31m766[m -> [32m0[m bytes
+ .../__pycache__/pyproject.cpython-311.pyc          |  Bin [31m5624[m -> [32m0[m bytes
+ .../self_outdated_check.cpython-311.pyc            |  Bin [31m11781[m -> [32m0[m bytes
+ .../__pycache__/wheel_builder.cpython-311.pyc      |  Bin [31m15182[m -> [32m0[m bytes
+ rl/Lib/site-packages/pip/_internal/build_env.py    |  311 [31m-[m
+ rl/Lib/site-packages/pip/_internal/cache.py        |  290 [31m-[m
+ rl/Lib/site-packages/pip/_internal/cli/__init__.py |    4 [31m-[m
+ .../cli/__pycache__/__init__.cpython-311.pyc       |  Bin [31m301[m -> [32m0[m bytes
+ .../cli/__pycache__/autocompletion.cpython-311.pyc |  Bin [31m10256[m -> [32m0[m bytes
+ .../cli/__pycache__/base_command.cpython-311.pyc   |  Bin [31m11875[m -> [32m0[m bytes
+ .../cli/__pycache__/cmdoptions.cpython-311.pyc     |  Bin [31m33781[m -> [32m0[m bytes
+ .../__pycache__/command_context.cpython-311.pyc    |  Bin [31m2123[m -> [32m0[m bytes
+ .../_internal/cli/__pycache__/main.cpython-311.pyc |  Bin [31m2593[m -> [32m0[m bytes
+ .../cli/__pycache__/main_parser.cpython-311.pyc    |  Bin [31m5537[m -> [32m0[m bytes
+ .../cli/__pycache__/parser.cpython-311.pyc         |  Bin [31m16962[m -> [32m0[m bytes
+ .../cli/__pycache__/progress_bars.cpython-311.pyc  |  Bin [31m3185[m -> [32m0[m bytes
+ .../cli/__pycache__/req_command.cpython-311.pyc    |  Bin [31m20340[m -> [32m0[m bytes
+ .../cli/__pycache__/spinners.cpython-311.pyc       |  Bin [31m8850[m -> [32m0[m bytes
+ .../cli/__pycache__/status_codes.cpython-311.pyc   |  Bin [31m389[m -> [32m0[m bytes
+ .../pip/_internal/cli/autocompletion.py            |  172 [31m-[m
+ .../pip/_internal/cli/base_command.py              |  236 [31m-[m
+ .../site-packages/pip/_internal/cli/cmdoptions.py  | 1074 [31m---[m
+ .../pip/_internal/cli/command_context.py           |   27 [31m-[m
+ rl/Lib/site-packages/pip/_internal/cli/main.py     |   79 [31m-[m
+ .../site-packages/pip/_internal/cli/main_parser.py |  134 [31m-[m
+ rl/Lib/site-packages/pip/_internal/cli/parser.py   |  294 [31m-[m
+ .../pip/_internal/cli/progress_bars.py             |   68 [31m-[m
+ .../site-packages/pip/_internal/cli/req_command.py |  505 [31m--[m
+ rl/Lib/site-packages/pip/_internal/cli/spinners.py |  159 [31m-[m
+ .../pip/_internal/cli/status_codes.py              |    6 [31m-[m
+ .../pip/_internal/commands/__init__.py             |  132 [31m-[m
+ .../commands/__pycache__/__init__.cpython-311.pyc  |  Bin [31m4469[m -> [32m0[m bytes
+ .../commands/__pycache__/cache.cpython-311.pyc     |  Bin [31m10889[m -> [32m0[m bytes
+ .../commands/__pycache__/check.cpython-311.pyc     |  Bin [31m2424[m -> [32m0[m bytes
+ .../__pycache__/completion.cpython-311.pyc         |  Bin [31m5639[m -> [32m0[m bytes
+ .../__pycache__/configuration.cpython-311.pyc      |  Bin [31m14867[m -> [32m0[m bytes
+ .../commands/__pycache__/debug.cpython-311.pyc     |  Bin [31m12212[m -> [32m0[m bytes
+ .../commands/__pycache__/download.cpython-311.pyc  |  Bin [31m7958[m -> [32m0[m bytes
+ .../commands/__pycache__/freeze.cpython-311.pyc    |  Bin [31m4674[m -> [32m0[m bytes
+ .../commands/__pycache__/hash.cpython-311.pyc      |  Bin [31m3371[m -> [32m0[m bytes
+ .../commands/__pycache__/help.cpython-311.pyc      |  Bin [31m1983[m -> [32m0[m bytes
+ .../commands/__pycache__/index.cpython-311.pyc     |  Bin [31m7737[m -> [32m0[m bytes
+ .../commands/__pycache__/inspect.cpython-311.pyc   |  Bin [31m4459[m -> [32m0[m bytes
+ .../commands/__pycache__/install.cpython-311.pyc   |  Bin [31m31159[m -> [32m0[m bytes
+ .../commands/__pycache__/list.cpython-311.pyc      |  Bin [31m17263[m -> [32m0[m bytes
+ .../commands/__pycache__/search.cpython-311.pyc    |  Bin [31m8965[m -> [32m0[m bytes
+ .../commands/__pycache__/show.cpython-311.pyc      |  Bin [31m11308[m -> [32m0[m bytes
+ .../commands/__pycache__/uninstall.cpython-311.pyc |  Bin [31m5159[m -> [32m0[m bytes
+ .../commands/__pycache__/wheel.cpython-311.pyc     |  Bin [31m9415[m -> [32m0[m bytes
+ .../site-packages/pip/_internal/commands/cache.py  |  225 [31m-[m
+ .../site-packages/pip/_internal/commands/check.py  |   54 [31m-[m
+ .../pip/_internal/commands/completion.py           |  130 [31m-[m
+ .../pip/_internal/commands/configuration.py        |  280 [31m-[m
+ .../site-packages/pip/_internal/commands/debug.py  |  201 [31m-[m
+ .../pip/_internal/commands/download.py             |  147 [31m-[m
+ .../site-packages/pip/_internal/commands/freeze.py |  108 [31m-[m
+ .../site-packages/pip/_internal/commands/hash.py   |   59 [31m-[m
+ .../site-packages/pip/_internal/commands/help.py   |   41 [31m-[m
+ .../site-packages/pip/_internal/commands/index.py  |  139 [31m-[m
+ .../pip/_internal/commands/inspect.py              |   92 [31m-[m
+ .../pip/_internal/commands/install.py              |  774 [31m--[m
+ .../site-packages/pip/_internal/commands/list.py   |  368 [31m-[m
+ .../site-packages/pip/_internal/commands/search.py |  174 [31m-[m
+ .../site-packages/pip/_internal/commands/show.py   |  189 [31m-[m
+ .../pip/_internal/commands/uninstall.py            |  113 [31m-[m
+ .../site-packages/pip/_internal/commands/wheel.py  |  183 [31m-[m
+ .../site-packages/pip/_internal/configuration.py   |  383 [31m-[m
+ .../pip/_internal/distributions/__init__.py        |   21 [31m-[m
+ .../__pycache__/__init__.cpython-311.pyc           |  Bin [31m1051[m -> [32m0[m bytes
+ .../distributions/__pycache__/base.cpython-311.pyc |  Bin [31m3143[m -> [32m0[m bytes
+ .../__pycache__/installed.cpython-311.pyc          |  Bin [31m1860[m -> [32m0[m bytes
+ .../__pycache__/sdist.cpython-311.pyc              |  Bin [31m9383[m -> [32m0[m bytes
+ .../__pycache__/wheel.cpython-311.pyc              |  Bin [31m2451[m -> [32m0[m bytes
+ .../pip/_internal/distributions/base.py            |   51 [31m-[m
+ .../pip/_internal/distributions/installed.py       |   29 [31m-[m
+ .../pip/_internal/distributions/sdist.py           |  156 [31m-[m
+ .../pip/_internal/distributions/wheel.py           |   40 [31m-[m
